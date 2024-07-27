@@ -1,6 +1,7 @@
 #if defined __has_include
-#  if ! __has_include(<utility/http_parser/http_parser.h>) && ! __has_include(<http_parser.h>)
+#  if ! __has_include(<utility/http_parser/http_parser.h>) && ! __has_include(<http_parser.h>) && ! __has_include(<../../libraries/SocketWrapper/src/utility/http_parser/http_parser.h>)
 #    define NO_HTTP_PARSER
+#    error ERRROR
 #  endif
 #endif
 
